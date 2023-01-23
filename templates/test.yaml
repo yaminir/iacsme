@@ -1,10 +1,8 @@
----
 AWSTemplateFormatVersion: "2010-09-09"
-Description: "An AWS Lambda application that calls the Lambda API."
+Description: s3 bucket creation
 
 Resources:
-  VizS3Bucket:
-    Properties:
-      AccessControl: Private
-      BucketName: mypichibuckettest0097
+  S3Bucket:
     Type: "AWS::S3::Bucket"
+    Properties:
+      BucketName: !Ref ApplicationTagValue
