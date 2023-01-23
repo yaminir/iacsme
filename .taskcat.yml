@@ -1,1 +1,10 @@
+project:
+  name: tests3
+  regions:
+  - us-east-1
+tests:
+  default:
+    template: ./templates/test.yaml
+#     parameters:
+#       ApplicationTagValue: myiactestbucket009
 
