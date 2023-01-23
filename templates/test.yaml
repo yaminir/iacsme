@@ -1,8 +1,11 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Description: s3 bucket creation
-
+Parameters:
+  BucketName:
+    Type: String
+    Default: "sample"
 Resources:
   S3Bucket:
     Type: "AWS::S3::Bucket"
     Properties:
-      BucketName: !Ref ApplicationTagValue
+      BucketName:  !Ref BucketName
