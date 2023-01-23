@@ -3,16 +3,7 @@ AWSTemplateFormatVersion: "2010-09-09"
 Description: "An AWS Lambda application that calls the Lambda API."
 Parameters:
   ApplicationTagValue:
-    Default: taskcatpipeline009
     Description: "Application Name"
-    Type: String
-  EnvironmentTagValue:
-    AllowedValues:
-      - Dev
-      - TestQA
-      - Prod
-    Default: Dev
-    Description: "Environment Tag"
     Type: String
 
 Resources:
