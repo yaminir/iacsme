@@ -1,15 +1,10 @@
 ---
 AWSTemplateFormatVersion: "2010-09-09"
 Description: "An AWS Lambda application that calls the Lambda API."
-Parameters:
-  ApplicationTagValue:
-    Description: "Application Name"
-    Type: String
-    default: daffabucketmine009
 
 Resources:
   VizS3Bucket:
     Properties:
       AccessControl: Private
-      BucketName: !Ref ApplicationTagValue
+      BucketName: mypichibuckettest0097
     Type: "AWS::S3::Bucket"
