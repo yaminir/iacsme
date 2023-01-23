@@ -3,7 +3,7 @@ AWSTemplateFormatVersion: "2010-09-09"
 Description: "An AWS Lambda application that calls the Lambda API."
 Parameters:
   ApplicationTagValue:
-    Default: Taskcat-pipeline
+    Default: taskcatpipeline009
     Description: "Application Name"
     Type: String
   EnvironmentTagValue:
@@ -19,5 +19,5 @@ Resources:
   VizS3Bucket:
     Properties:
       AccessControl: Private
-      BucketName: tascattest009
+      BucketName: !Ref ApplicationTagValue
     Type: "AWS::S3::Bucket"
