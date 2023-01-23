@@ -3,7 +3,7 @@ Description: s3 bucket creation
 Parameters:
   BucketName:
     Type: String
-    Default: "sample"
+    Default: "karthikyamini1234"
 Resources:
   S3Bucket:
     Type: "AWS::S3::Bucket"
