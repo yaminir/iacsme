@@ -5,6 +5,7 @@ Parameters:
   ApplicationTagValue:
     Description: "Application Name"
     Type: String
+    default: daffabucketmine009
 
 Resources:
   VizS3Bucket:
