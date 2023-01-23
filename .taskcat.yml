@@ -5,3 +5,6 @@ project:
 tests:
   default:
     template: ./templates/test.yaml
+    parameters:
+      ApplicationTagValue: myiactestbucket009
+
