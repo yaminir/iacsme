@@ -1,1 +1,23 @@
+---
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "An AWS Lambda application that calls the Lambda API."
+Parameters:
+  ApplicationTagValue:
+    Default: Taskcat-pipeline
+    Description: "Application Name"
+    Type: String
+  EnvironmentTagValue:
+    AllowedValues:
+      - Dev
+      - TestQA
+      - Prod
+    Default: Dev
+    Description: "Environment Tag"
+    Type: String
 
+Resources:
+  VizS3Bucket:
+    Properties:
+      AccessControl: Private
+      BucketName: tascattest009
+    Type: "AWS::S3::Bucket"
